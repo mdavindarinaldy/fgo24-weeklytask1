@@ -9,15 +9,13 @@ Diberikan sebuah teks, periksa apakah kata tersebut adalah palindrome atau tidak
 Langkah-langkah:
 1. Mulai
 1. Input teks
-1. Deklarasikan variabel: length = length dari teks; i[]  (untuk menyimpan nilai dari index huruf dalam teks); j[] (untuk menyimpan nilai kebalikan dari teks); new (untuk menyimpan teks baru)
-1. Deklarasikan x = 0 dan y = length - 1
-1. Jika x<length, maka 
-1. i[x] = char dari index ke-x dari teks; j[y]=i[x]; x++; y--
-1. new = j[].join();
-1. Jika teks == new, maka
-1. Outputkan "Palindrome"
-1. Jika tidak, maka
-1. Outputkan "Bukan Palindrome"
+1. Deklarasikan variabel: length = length dari teks; array j (untuk menyimpan nilai kebalikan dari teks); new (untuk menyimpan teks baru)
+1. Deklarasikan variabel x sama dengan 0 dan y sama dengan nilai variabel length dikurangi 1
+1. Selama x kurang dari length, maka akan menjalankan langkah 6, jika tidak maka ke langkah 7
+1. menyimpan karakter ke-x di teks ke dalam index ke-y di j, penambahan x dengan 1 dan pengurangan y dengan 1 kemudian kembali ke langkah 5
+1. menggabungkan seluruh karakter di array j dan menyimpannya ke dalam variabel new;
+1. Jika nilai teks dan new sama, maka outputkan "Palindrome"
+1. Jika tidak, maka outputkan "Bukan Palindrome"
 1. Selesai
 
 ### Flowchart
@@ -33,8 +31,7 @@ new"}
 D[x = 0
 y = length-1]
 E{x < length}
-F@{shape:rect, label: "i[x] = char dari index ke-x dari teks
-j[y]= i[x]
+F@{shape:rect, label: "j[y] = char dari index ke-x dari teks
 x++
 y--
 "}
@@ -62,14 +59,15 @@ Langkah-langkah:
 1. Mulai
 1. Input kalimat
 1. Deklarasikan variabel: length = length dari kalimat; array i (untuk menyimpan huruf yang ada dalam kalimat); array kata (untuk menyimpan tiap kata); new (untuk menyimpan kalimat baru yang dibalik)
-1. Deklarasikan x = 0 dan y = 0
-1. Jika x<length maka akan lanjut ke langkah 8, jika tidak
-1. Assign index ke-x dalam kalimat ke index ke-x dalam i
-1. Jika index ke-x dalam i bukan merupakan spasi maka lanjut ke langkah berikutnya
-1. Menambahkan index ke-x dalam i ke index ke-y dalam kata dan inkremental x
-1. Deklarasikan k = length dari kata[]; j = k-1
-1. Jika j >= 0, maka
-1. new += kata[j] + " "
+1. Deklarasikan x dan y dengan masing-masing nilai 0
+1. Selama x<length bernilai benar maka akan menjalankan langkah ke-6 & 7, jika tidak akan lanjut ke langkah 10
+1. Assign index ke-x di kalimat ke dalam index ke-x di i
+1. Jika index ke-x dalam i bukan merupakan spasi maka lanjut ke langkah 8, jika index ke-x dalam i merupakan spasi maka lanjut ke langkah 9 
+1. Menambahkan index ke-x di i ke dalam index ke-y di kata dan inkremental x, kembali ke langkah 5
+1. Inkremental x dan y, kembali ke langkah 5
+1. Deklarasikan variabel k = length dari array kata dan variabel j = k dikurangi 1
+1. Selama j lebih besar atau sama dengan 0, maka akan menjalankan langkah 12, jika tidak maka akan menjalankan langkah 13
+1. Menampung kalimat baru dengan kata yang dibalik di dalam variabel new serta inkremental j
 1. Outputkan new 
 1. Selesai
 
@@ -105,7 +103,7 @@ M[/''new''/]
 N(((Selesai)))
 
 A --> B --> C --> D --> E
-E --YA--> E2 --> E1 --YA--> F --> E1
+E --YA--> E2 --> E1 --YA--> F --> E
 E1 --TIDAK--> H --> E
 E --TIDAK--> I --> K --YA--> L --> K
 K --TIDAK--> M --> N
