@@ -75,7 +75,7 @@ Langkah-langkah:
 ```mermaid
 flowchart TD
 A((Mulai))
-B[/Kalimat/]
+B[/kalimat/]
 C@{shape: rect, label: "le = kalimat.length
 i[]
 kata[]
