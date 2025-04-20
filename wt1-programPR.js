@@ -82,7 +82,7 @@ function foodsMenu() {
                     basket.price = basket.price + foods[input1-1].price
                     console.log(`${foods[input1-1].type} berhasil ditambahkan ke Keranjang`)
                     mainMenu()
-                } else if (input2=="Tidak") { mainMenu() }
+                } else if (input2=="Tidak") { foodsMenu() }
                 else { errorMessage() }
             })
         }
@@ -101,7 +101,7 @@ function drinksMenu() {
                     basket.price = basket.price + drinks[input1-1].price
                     console.log(`${drinks[input1-1].type} berhasil ditambahkan ke Keranjang`)
                     mainMenu()
-                } else if (input2=="Tidak") { mainMenu()}
+                } else if (input2=="Tidak") { drinksMenu()}
                 else { errorMessage() }
             })
         }
@@ -120,7 +120,7 @@ function snacksMenu() {
                     basket.price = basket.price + snacks[input1-1].price
                     console.log(`${snacks[input1-1].type} berhasil ditambahkan ke Keranjang`)
                     mainMenu()
-                } else if (input2=="Tidak") { mainMenu()}
+                } else if (input2=="Tidak") { snacksMenu()}
                 else { errorMessage() }
             })
         }
@@ -139,7 +139,7 @@ function dessertsMenu() {
                     basket.price = basket.price + desserts[input1-1].price
                     console.log(`${desserts[input1-1].type} berhasil ditambahkan ke Keranjang`)
                     mainMenu()
-                } else if (input2=="Tidak") { mainMenu() }
+                } else if (input2=="Tidak") { dessertsMenu() }
                 else { errorMessage() }
             })
         } 
