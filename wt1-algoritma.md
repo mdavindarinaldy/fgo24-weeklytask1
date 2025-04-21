@@ -24,8 +24,8 @@ flowchart TD
 A((mulai))
 B[/teks/]
 C@{shape:rect, label: "le = teks.length
-i[]
-j[]
+i = []
+j = []
 new"}
 D[x = 0
 y = le-1]
@@ -77,8 +77,8 @@ flowchart TD
 A((Mulai))
 B[/kalimat/]
 C@{shape: rect, label: "le = kalimat.length
-i[]
-kata[]
+i = []
+kata = []
 new
 "}
 D[x = 0
