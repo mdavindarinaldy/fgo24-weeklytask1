@@ -24,7 +24,6 @@ flowchart TD
 A((mulai))
 B[/teks/]
 C@{shape:rect, label: "le = teks.length
-i = []
 j = []
 new"}
 D[x = 0
