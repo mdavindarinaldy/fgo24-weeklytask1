@@ -4,11 +4,10 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
-let printSquare = 0
 let isComplete = false
 
 // Nomor 1 - printSquare
-function calculate(x) {
+function printSquare(x) {
     if (typeof x == "number" && x >0) {
         for (let i=1; i<=x; i++) {
             let temp = ""
@@ -36,7 +35,7 @@ function array() {
 
 rl.question(`Masukkan angka anda : `, function calc(x){
     x = Number(x)
-    calculate(x)
+    printSquare(x)
     array()
     rl.close()
 })
