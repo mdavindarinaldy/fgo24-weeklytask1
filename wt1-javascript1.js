@@ -3,7 +3,7 @@ const product = {
     rating: [1,2,3,4,5],
     price: 135000,
     isActive: true,
-    image: ["kemeja hitam", "kemeja navy","kemeja coksu", "kemeja maroon", "kemeja army", "kemeja putih", "kemeja grey"],
+    image: ["kemeja hitam.jpg", "kemeja navy.jpg","kemeja coksu.jpg", "kemeja maroon.jpg", "kemeja army.jpg", "kemeja putih.jpg", "kemeja grey.jpg"],
     description: {
         kondisi: "Baru",
         minPemesanan: "1 Buah"
