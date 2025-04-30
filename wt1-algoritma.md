@@ -65,7 +65,7 @@ Langkah-langkah:
 1. Inkremental x dan y, kembali ke langkah 5
 1. Deklarasikan variabel k = le dari array kata dan variabel j = k dikurangi 1
 1. Selama j lebih besar atau sama dengan 0, maka akan menjalankan langkah 12, jika tidak maka akan menjalankan langkah 13
-1. Menampung kalimat baru dengan kata yang dibalik di dalam variabel new serta inkremental j, kembali ke langkah 11
+1. Menampung kalimat baru dengan kata yang dibalik di dalam variabel new serta dekremental j, kembali ke langkah 11
 1. Outputkan new 
 1. Selesai
 
@@ -96,7 +96,7 @@ j = k-1
 "}
 K@{shape: diamond, label: "j >= 0"}
 L@{shape: rect, label: "new += kata[j] + ' '
-j++"}
+j--"}
 M[/''new''/]
 N(((Selesai)))
 
